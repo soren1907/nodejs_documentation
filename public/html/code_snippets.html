@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code snippets</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+<body>
+
+    <div id="wrapper">
+
+        <div id="header">
+            <h1>Mandatory 1</h1>
+            <p>This website will cover some of the terminal commands, code, tools and theory we have been working with so far in the node.js class. </p>
+        </div>
+   
+        <div id="contentlist">  
+            <h2>Content</h2>
+            <ul>
+                <li> <a href="/">General</a> </li>
+                <li> <a href="/terminalcommands">Terminal commands</a> </li>
+                <li> <a href="/codesnippets">Code snippets</a> </li>
+                <li> <a href="/tools">Tools</a> </li>
+                <li> <a href="/theory">Theory</a> </li>
+            </ul>
+        </div>
+
+      
+        <div id="content"> 
+            <h2 style="text-align: center;">Code Snippets </h2>
+            <br>
+            <p>Our most used method so far has been the “get” method:</p>
+            <p>Get methods are used by clients to request a server for some resource. “req” is data send from the client and “res” will be the resource that the server sends to the client.</p>
+            <img style='border:2px solid #000000' src="../pictures/cs1.jpg" width="500" height="63">
+            <p>The get method takes two arguments. Det first one being the endpoint (what we have to type in the url to get to that endpoint) and the second a callback function, which will be used to send response to the client requesting.</p>
+            <br>
+            <p>To use the “get” method, the express module has to be required and attached to a variable. </p>
+            <p>Another variable, typically called “app”, calls the express-function and puts an express application inside the variable. (creates object of express module)</p>
+            <img style='border:2px solid #000000' src="../pictures/cs2.jpg" width="500" height="59">
+            <p>app.use makes body/json parser available. Now the methods in app.js can use the json code inside the recieved request bodies.</p>
+            <br>
+            <p>the “listen”-method is what starts the server. (therefor, listen can be a confusing name).</p>
+            <p>It is good coding standard to have this message as the last in the file. </p>
+            <img style='border:2px solid #000000' src="../pictures/cs3.jpg" width="500" height="162">
+            <p>If you declare a port in the start command it will use that port, otherwise due to the “||”, 8081 will be used as the port.</p>
+            <p>If you do not include “|| 8081” and try to start to server without writing a port number before "node app.js”, the port would be undefined and the server will not start.</p>
+            <br>
+            <p>The Package.json file can be used for declaring which dependencies should be installed. </p>
+            <p>This example shows the code needed for installing express.</p>
+            <img style='border:2px solid #000000' src="../pictures/cs4.jpg" width="500" height="102">
+            <p>Here “dependencies” is the Key and the value is an object that will contain the dependencies.</p>
+            <p>Inside the object is a key “express” is declared and the value “4.17.1 ” is the version. </p>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

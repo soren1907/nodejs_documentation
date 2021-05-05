@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>theory</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+<body>
+
+    <div id="wrapper">
+
+        <div id="header">
+            <h1>Mandatory 1</h1>
+            <p>This website will cover some of the terminal commands, code, tools and theory we have been working with so far in the node.js class. </p>
+        </div>
+   
+        <div id="contentlist">  
+            <h2>Content</h2>
+            <ul>
+                <li> <a href="/">General</a> </li>
+                <li> <a href="/terminalcommands">Terminal commands</a> </li>
+                <li> <a href="/codesnippets">Code snippets</a> </li>
+                <li> <a href="/tools">Tools</a> </li>
+                <li> <a href="/theory">Theory</a> </li>
+            </ul>
+        </div>
+
+      
+        <div id="content"> 
+            <h2 style="text-align: center;">Theory</h2>
+            <br>
+            <b>HTTP methods</b>
+            <p>We have worked with 4 types of HTTP methods so far. In the code it is a good codingstandard to have the method sorted by types. E.g. all GET-methods first.</p>
+            <p>GET:</p>
+            <p>Requests server for a resource, Retrieves resources.</p>
+            <p>POST:</p>
+            <p>Creates new resources with some exceptions</p>
+            <p>PUT/PATCH:</p>
+            <p>Updates a resource. (PUT: the whole reosurce. PATCH: part of the resource)</p>
+            <p>Patch is often best to use. It is used when you don’t want to update the entire resource.</p>
+            <p>And you often don’t want to update the id…</p>
+            <p>DELETE:</p>
+            <p>Deletes/removes a resource</p>
+            <br>
+            <b>Variables and scope</b>
+            <p>Const: immutable</p>
+            <p>Let: can change</p>
+            <p>Var: global (recommended not to be used in node.js)</p>
+            <p>Back in the days it was the only variable. Javascript only has “function scope” and no “block scope”. </p>
+            <p>This means that all variables inside a function will be on same level. A variable inside a forloop can be used outside because there is no block scope.</p>
+            <p>This theory is only true when variables of type “var” are used and it is why we should avoid using “var”.</p>
+            <p>In ES6 the “const” and “let” variables were introduced and they both works  with block scope. As an example look at the code:</p>
+            <img style='border:2px solid #000000' src="../pictures/scope1.jpg" width="157" height="65">
+            <p>This will give an error. Numbers are not available outside the block.</p>
+            <img style='border:2px solid #000000' src="../pictures/scope2.jpg" width="157" height="65">
+            <p>This will print “123” because var is used, the parent block has access to it.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
